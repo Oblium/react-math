@@ -5,7 +5,7 @@ const levelMap = [
   300, 300, 300, 300, 300, 300, 300
 ];
 
-const gameDuration = 10;
+const gameDuration = 30;
 
 
 export default {
