@@ -3,4 +3,4 @@ A simple react app to play with math
 
 ## To start
 
-```npm start
+_npm start_
