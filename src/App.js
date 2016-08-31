@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './components/views/header/Header';
-import Footer from './components/views/footer/Footer';
-import Main from './components/containers/main/Main';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Main from './components/main/Main';
 import QuestionGenerator from './utils/QuestionGenerator';
 import Timer from './utils/Timer';
 
@@ -15,7 +15,7 @@ class App extends React.Component {
     super();
     this.headerText = "Solve it!";
   }
-  
+
   render(){
     return (
       <div>

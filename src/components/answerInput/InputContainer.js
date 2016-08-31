@@ -1,12 +1,7 @@
 import React from 'react';
-import AnswerInput from '../../views/answerInput/AnswerInput';
+import Input from '../views/answerInput/Input';
 
 class InputContainer extends React.Component {
-  constructor() {
-    super();
-    this.answer = this.answer.bind(this);
-  }
-
   answer(e) {
     if (this.props.guess(+e.target.value)) {
       e.target.value = "";
@@ -15,7 +10,7 @@ class InputContainer extends React.Component {
 
   render() {
     return (
-      <AnswerInput onKeyUp={this.answer} {...this.props} />
+      <Input onKeyUp={e => this.answer(e)} {...this.props} />
     );
   }
 }

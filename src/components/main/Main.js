@@ -1,10 +1,10 @@
 import React from 'react';
-import InputContainer from '../inputContainer/InputContainer';
-import QuestionContainer from '../questionContainer/QuestionContainer';
-import ScoreContainer from '../score/ScoreContainer';
-import TimerContainer from '../timer/TimerContainer';
+import InputContainer from '../answerInput/InputContainer';
+import Question from '../question/Question';
+import Score from '../score/Score';
+import Timer from '../timer/Timer';
 
-import Constants from '../../../config/constants';
+import Constants from '../../config/constants';
 
 class Main extends React.Component {
   constructor() {
@@ -34,8 +34,7 @@ class Main extends React.Component {
   }
 
   incrementScore() {
-    var actualScore = this.state.score;
-    this.setState({score: (actualScore + 1)});
+    this.setState({score: (this.state.score + 1)});
   }
 
   guess(num) {
@@ -50,10 +49,10 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <QuestionContainer question={this.state.question} gameEnded={this.state.gameEnded} />
+        <Question question={this.state.question} gameEnded={this.state.gameEnded} />
         <InputContainer guess={this.guess} gameEnded={this.state.gameEnded} />
-        <ScoreContainer score={this.state.score} gameEnded={this.state.gameEnded} />
-        <TimerContainer time={this.state.time} gameEnded={this.state.gameEnded} />
+        <Score score={this.state.score} gameEnded={this.state.gameEnded} />
+        <Timer time={this.state.time} gameEnded={this.state.gameEnded} />
       </div>
     );
   }

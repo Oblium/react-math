@@ -2,7 +2,7 @@ import React from 'react';
 
 import './answerInput.scss';
 
-class AnswerInput extends React.Component {
+class Input extends React.Component {
 
   constructor() {
     super();
@@ -28,4 +28,4 @@ class AnswerInput extends React.Component {
   }
 }
 
-export default AnswerInput;
+export default Input;
