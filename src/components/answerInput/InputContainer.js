@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from '../views/answerInput/Input';
+import Input from '../answerInput/Input';
 
 class InputContainer extends React.Component {
   answer(e) {
